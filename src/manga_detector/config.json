@@ -1,0 +1,12 @@
+{
+  "ctd_weights": "ctd.pt",
+  "yolo_weights": "yolo26n-manga.pt",
+  "input_size": 1024,
+  "yolo_confidence": 0.25,
+  "yolo_nms_iou": 0.35,
+  "language_transfer_iou": 0.5,
+  "language_policy": "Reuse CTD language only for overlapping raw CTD boxes; otherwise unknown. No Japanese assumption.",
+  "keep_undetected_mask": false,
+  "block_policy": "preserve_ctd",
+  "preserve_overlap_threshold": 0.5
+}

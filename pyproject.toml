@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "manga-detector"
+version = "1.0.0"
+description = "CTD and manga-fine-tuned YOLO26 text-region detection and masks"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = "AGPL-3.0-only AND GPL-3.0-only"
+license-files = ["LICENSE", "LICENSES/*.txt", "THIRD_PARTY_NOTICES.md"]
+dependencies = [
+  "torch>=2.7,<3",
+  "torchvision>=0.22,<1",
+  "ultralytics==8.4.198",
+  "numpy>=1.26.4,<2",
+  "opencv-python==4.10.0.84",
+  "shapely>=2,<3",
+  "pyclipper>=1.3,<2",
+  "Pillow>=10",
+  "PyYAML>=6,<7",
+  "requests>=2.31",
+  "packaging>=23",
+  "platformdirs>=4",
+]
+
+[project.scripts]
+manga-detector-download = "manga_detector.weights:main"
+
+[project.urls]
+Repository = "https://github.com/SeHaziq/CTD-YOLO26"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+manga_detector = ["*.json"]

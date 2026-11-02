@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "selected": "YOLO26n previous Balanced hybrid",
+  "files": {
+    "ctd.pt": {
+      "sha256": "1f90fa60aeeb1eb82e2ac1167a66bf139a8a61b8780acd351ead55268540cccb",
+      "url": "https://github.com/zyddnys/manga-image-translator/releases/download/beta-0.2.1/comictextdetector.pt"
+    },
+    "yolo26n-manga.pt": {
+      "sha256": "f0dca2b99fbba0fe06d94d7cb24225277b67f5b9e870f88ce23a9692fc946a7b",
+      "url": null
+    }
+  }
+}
